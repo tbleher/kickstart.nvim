@@ -347,6 +347,7 @@ require('telescope').setup {
         ['<C-d>'] = false,
       },
     },
+    layout_config = { width = 0.999 },
   },
 }
 
