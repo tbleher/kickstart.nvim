@@ -671,5 +671,10 @@ cmp.setup {
   },
 }
 
+vim.keymap.set('n', '<F5>', ':ClangdSwitchSourceHeader<cr>', {silent=true})
+vim.keymap.set('n', '<F6>', ':grep "\\b<C-R><C-W>\\b"<CR><C-O>', {silent=true})
+
+vim.o.grepprg="git grep -n"
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
