@@ -351,6 +351,7 @@ require('telescope').setup {
       },
     },
     layout_config = { width = 0.999 },
+    dynamic_preview_title = true,
   },
 }
 
