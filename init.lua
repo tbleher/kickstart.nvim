@@ -313,6 +313,16 @@ vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.scrolloff = 3
 
+-- fold based on treesitter
+-- Deactivated since folds are closed when opening files via telescope, and the function is a bit slow
+-- vim.o.foldmethod = "expr"
+-- vim.o.foldexpr ="nvim_treesitter#foldexpr()"
+-- vim.o.foldlevel = 100
+-- --  open folds by default
+-- vim.api.nvim_create_autocmd({"BufReadPost", "FileReadPost"}, {
+--   command = "normal zR"
+-- })
+
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
